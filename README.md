@@ -11,4 +11,4 @@ And you also have pretty colors depending on your CLI ones!
 
 ## Screenshots
 
-![image](Screenshots/sc1.png)
+![image](screenshots/sc1.png)
