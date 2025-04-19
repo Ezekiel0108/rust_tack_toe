@@ -149,7 +149,7 @@ fn player_insert(playcnt: &mut i32, plyr: &mut &str, brd: &mut [[&str; 3]; 3]) {
         r = actual_insert();
         println!("{}", "Select a column you want to play in (1-3)".yellow());
         c = actual_insert();
-        if brd[c][r] == "-" {
+        if brd[r][c] == "-" {
             break;
         } else {
             println!("{}", "The spot is already taken!".red());
@@ -158,10 +158,10 @@ fn player_insert(playcnt: &mut i32, plyr: &mut &str, brd: &mut [[&str; 3]; 3]) {
     }
 
     if *plyr == "x" {
-        brd[c][r] = "x";
+        brd[r][c] = "x";
         *plyr = "o";
     } else {
-        brd[c][r] = "o";
+        brd[r][c] = "o";
         *plyr = "x";
     }
 
