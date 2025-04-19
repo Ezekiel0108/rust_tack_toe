@@ -25,6 +25,10 @@ fn main() {
             );
             break;
         }
+        if play_count > 8 {
+            println!("{}{}", "You both did great! ".green(), "It's a draw!".red());
+            break;
+        }
     }
 }
 
